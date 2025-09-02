@@ -1,0 +1,39 @@
+cabal-version:   3.4
+name:            emoji-favicon
+version:         0.1.0.0
+license:         ISC
+license-file:    LICENSE
+author:          Jezen Thomas
+maintainer:      jezen@supercede.com
+category:        Web
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+synopsis:
+  Emoji → SVG favicon (data: URI) with optional TH to generate per-emoji tags
+
+description:
+  Pure helpers to produce SVG emoji favicons as data: URIs and Blaze HTML tags.
+
+source-repository head
+  type:     git
+  location: https://github.com/SupercedeTech/emoji-favicon
+
+library
+  ghc-options:        -Wall
+  default-extensions: ImportQualifiedPost
+  exposed-modules:    EmojiFavicon
+  other-modules:
+    EmojiFavicon.TH
+    EmojiFavicon.Widget
+
+  build-depends:
+    , base              >=4.14 && <5
+    , blaze-html        >=0.9  && <0.10
+    , bytestring        >=0.10 && <0.13
+    , containers        >=0.6  && <0.7
+    , http-types        >=0.12 && <0.13
+    , template-haskell  >=2.18 && <2.22
+    , text              >=1.2  && <2.2
+
+  hs-source-dirs:     src
+  default-language:   Haskell2010
