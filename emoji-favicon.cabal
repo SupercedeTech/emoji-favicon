@@ -27,13 +27,13 @@ library
     EmojiFavicon.Widget
 
   build-depends:
-    , base              >=4.14 && <5
-    , blaze-html        >=0.9  && <0.10
-    , bytestring        >=0.10 && <0.13
-    , containers        >=0.6  && <0.7
-    , http-types        >=0.12 && <0.13
-    , template-haskell  >=2.18 && <2.22
-    , text              >=1.2  && <2.2
+    , base
+    , blaze-html
+    , bytestring
+    , containers
+    , http-types
+    , template-haskell
+    , text
 
   hs-source-dirs:     src
   default-language:   Haskell2010
