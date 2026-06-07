@@ -1,6 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    # nixos 26.05 pinned to same commit as in the main repo.
+    nixpkgs.url = "github:nixos/nixpkgs?ref=b51242d7d43689db2f3be91bd05d5b24fbb469c4";
     flake-utils.url = "github:numtide/flake-utils";
     pre-commit-hooks.url = "github:cachix/pre-commit-hooks.nix";
   };
